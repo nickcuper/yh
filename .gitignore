@@ -1,0 +1,24 @@
+# Yii runtime dir
+/runtime/*
+!/runtime/.gitkeep
+!/runtime/cache
+/runtime/cache/*
+!/runtime/cache/.gitkeep
+# Local config file
+/common/config/main-local.php
+# Svn files
+.svn
+# Windows folder metadata
+desktop.ini
+Thumbs.db
+# OpenOffice.org lock files
+.~lock.*
+# NetBeans Project private files
+/nbproject
+/nbproject/private/*
+# PhpStorm project files
+/.idea
+# Composer vendor files
+/vendor/
+
+/bower_components/

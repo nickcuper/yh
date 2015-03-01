@@ -1,0 +1,21 @@
+{
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii": "dev-master",
+    "2amigos/escriptboost": "dev-master",
+    "cr0t/yiidebugtb": "dev-master",
+    "urmaul/yii-formattedfilelogroute": "~1.0",
+    "Crisu83/yiistrap": "*"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "1.*",
+    "guzzlehttp/guzzle": "~4.0"
+  },
+  "autoload": {
+    "classmap": [
+      "common/components",
+      "common/models",
+      "common/extensions"
+    ]
+  }
+}
