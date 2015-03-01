@@ -16,5 +16,7 @@ php yiic migrate
 
 `
 chmod -R 777 frontend/assets
+`
+`
 chmod -R 777 runtime
 `
