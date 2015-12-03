@@ -61,7 +61,7 @@ class Quotes extends CApplicationComponent
         $data = curl_exec($curl);
         curl_close($curl);
 
-        $this->_handlerResponce($data);
+        $this->_handlerResponse($data);
     }
 
     /**
@@ -72,25 +72,6 @@ class Quotes extends CApplicationComponent
     protected function soapMode()
     {
         throw new CException('Not implemented yet');
-//        $soapClient = new SoapClient('http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote', array('exceptions'=>true,'use' => SOAP_LITERAL,));
-//        $soapClient = new SoapClient(null, [
-//            'trace' => 1,
-//            'uri' => 'http://finance.yahoo.com/webservice/v1/',
-//            'location' => 'http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote',
-//            'exceptions' => false,
-//            'style'        => SOAP_DOCUMENT,
-//            'use'          => SOAP_LITERAL,
-//            'soap_version' => SOAP_1_1,
-//        ]);
-//
-//        echo '<pre>';
-//        var_dump($soapClient->__setSoapHeaders('')); //the headers of your last request
-//        var_dump($soapClient->__getTypes()); //the headers of your last request
-//        var_dump($soapClient->__getLastRequestHeaders()); //the headers of your last request
-//        var_dump($soapClient->__getLastRequest()); //your last request
-//
-//        echo '</pre>';
-//        exit;
     }
 
     /**
@@ -108,7 +89,7 @@ class Quotes extends CApplicationComponent
      *
      * @param string $data
      */
-    protected function _handlerResponce($data = '')
+    protected function _handlerResponse($data = '')
     {
         if ($data) {
             $quotes = CJSON::decode($data);
